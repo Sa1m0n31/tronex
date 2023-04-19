@@ -51,8 +51,12 @@ a {
     color: inherit;
 }
 
-a, input, .btn {
+a, .btn {
     cursor: pointer;
+    transition: .2s all;
+}
+
+input {
     transition: .2s all;
 }
 
@@ -311,4 +315,234 @@ a, input, .btn {
 
 .offer__item:hover > .img {
     filter: brightness(0) invert(1);
+}
+
+.section--contact .section__header,
+.section--discount .section__header {
+    max-width: 700px;
+}
+
+.section__header__text {
+    text-align: center;
+    font-size: 16px;
+    color: #626262;
+    margin: 20px auto 0;
+}
+
+.discount {
+    position: relative;
+    width: 100%;
+    margin-top: -15px;
+}
+
+.img--discount {
+    filter: brightness(.7);
+}
+
+.discount * {
+    color: #fff;
+    text-align: center;
+}
+
+.discount__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.discount__header {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.discount__product {
+    font-weight: 700;
+    font-size: 44px;
+    margin: 15px auto 25px;
+}
+
+.btn--discount {
+    width: 240px;
+    height: 60px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.section--aboutUs {
+    margin: 80px 0;
+}
+
+.section--aboutUs * {
+    text-align: left;
+}
+
+.aboutUs__left {
+    width: 40%;
+    position: relative;
+}
+
+.aboutUs__left > .img {
+    width: 60%;
+}
+
+.img--aboutUs1 {
+    position: relative;
+    z-index: 3;
+}
+
+.img--aboutUs2 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 35%;
+}
+
+.aboutUs__right {
+    width: 58%;
+}
+
+.section__aboutUs__header {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.section__aboutUs__list {
+    list-style-type: none;
+}
+
+.section__aboutUs__list > li {
+    color: #626262;
+    font-size: 15px;
+    position: relative;
+    padding-left: 25px;
+    margin: 12px 0;
+}
+
+.section__aboutUs__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("./img/check.svg");
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.section--contact {
+    margin-top: 120px;
+}
+
+.contact {
+    background: var(--primary);
+    padding: 60px 0;
+}
+
+.contact > .flex {
+    align-items: flex-start;
+}
+
+.contact__left {
+    width: 50%;
+    max-width: 600px;
+}
+
+.contact__left > * {
+    color: #fff;
+}
+
+.contact__left__header {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.contact__left__item {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact__left__item > .img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.contact__form {
+    background: #fff;
+    padding: 25px;
+    width: 40%;
+}
+
+.contact__form__header {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.contact__form label,
+.contact__form form {
+    background: #fff;
+    width: 100%;
+}
+
+.contact__form label {
+    display: block;
+    color: #A4A4A4;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact__form label span {
+    color: #ff0000;
+}
+
+.input {
+    text-transform: none;
+    border: 2px solid var(--primary);
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 4px;
+}
+
+.input--textarea {
+    height: 150px;
+    resize: none;
+}
+
+.btn--submitForm {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.input:focus,
+.input:active {
+    outline: none;
+    border-width: 3px;
+}
+
+.map {
+    margin-top: 40px;
+    width: 100%;
+    height: 380px;
+}
+
+.footer {
+    margin-top: 60px;
+    background: #000;
+    height: 90px;
+}
+
+.footer * {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer .w {
+    height: 100%;
 }
